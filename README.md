@@ -73,3 +73,43 @@ git push -u origin main
 Где "https://github.com/examples-code/reponame.git" - это ссылка на ваш репозиторий
 При этом GitHub попросит логин и пароль, вместо пароля вводите токен (гуглите как его создать).
 
+
+
+## 1. Деплой проекта на облачный хостинг NetAngels
+
+### 1.1. Создаем аккаунт на сайте
+
+
+### 1.1.
+
+Выбираем в левом меню сайт, вкладка "Файлы" там выбираем "Терминал", в открывшемся терминале вводим: 
+
+```
+rm -r app
+mkdir app
+cd app
+git clone https://<github-token>@github.com/examples-code/django-hosting-netangels.git . -b main
+```
+
+Где <github-token> - это ваш токен в гитхаб (чтоб не вводить логин пароль).
+а "github.com/examples-code/django-hosting-netangels.git" - это ваш репозиторий
+
+Далее устанавливаете зависимости:
+```
+pip install -r ./requirements/prod.txt
+```
+
+Применим миграции:
+```
+python manage.py migrate
+```
+
+Проверим что при запуске сервера нет ошибок:
+```
+python manage.py runserver
+```
+
+Убедившись, что все хорошо, создаем суперюзера:
+```
+python manage.py createsuperuser
+```

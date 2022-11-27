@@ -17,7 +17,7 @@ INSTALLED_APPS += [
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": str(os.environ["POSTGRES_DB"]),
+        "NAME": str(os.environ["DBNAME"]),
         "USER": str(os.environ["DBUSER"]),
         "PASSWORD": str(os.environ["DBPASS"]),
         "HOST": str(os.environ.get("DBHOST", "localhost")),

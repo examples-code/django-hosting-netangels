@@ -1,0 +1,9 @@
+{
+  "printWidth": 120,
+  "trailingComma": "es5",
+  "semi": false,
+  "singleQuote": true,
+  "bracketSameLine": false,
+  "vueIndentScriptAndStyle": false,
+  "html.format.wrapAttributes": "force-aligned"
+}
