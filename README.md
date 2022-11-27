@@ -16,6 +16,12 @@ cd projectname
 git clone https://github.com/examples-code/django-hosting-netangels.git . master
 ```
 
+Откройте файл .gitignore и расскомментируйте строки:
+```
+.vscode/*
+.VSCode*/*
+```
+
 Удаляем каталог .git для того, чтоб отвязать каталог проекта от удаленного репозитория с шаблоном и инициировать свой git
 ```
 rm -r .git
