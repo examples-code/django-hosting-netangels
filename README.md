@@ -41,7 +41,7 @@ pip install --upgrade pip
 ### 1.1. Установка зависимостей
 
 ```
-pip install -r ./requirements.txt
+pip install -r ./requirements/dev.txt
 ```
 
 ### 1.1. Запустить сервер разработки:

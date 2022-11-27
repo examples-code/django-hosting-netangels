@@ -146,10 +146,9 @@ dmypy.json
 .pyre/
 
 # Django
-media/*
 static/*
+media/*
 !*media/.gitkeep
-# !media/static
 
 # Other
 *.backup
