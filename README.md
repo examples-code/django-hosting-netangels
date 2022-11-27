@@ -101,7 +101,7 @@ mkdir app
 cd app
 git clone https://<github-token>@github.com/examples-code/django-hosting-netangels.git . -b main
 ```
-Где <github-token> - это ваш токен в гитхаб (чтоб не вводить логин пароль).
+Где *github-token* - это ваш токен в гитхаб (чтоб не вводить логин пароль).
 а "github.com/examples-code/django-hosting-netangels.git" - это ваш репозиторий
 
 Далее устанавливаете зависимости:
@@ -141,7 +141,7 @@ ln -s ./config/wsgi.py ./
 ```
 git pull https://<github-token>@github.com/examples-code/django-hosting-netangels.git main
 ```
-Где <github-token> - это ваш токен в гитхаб (чтоб не вводить логин пароль).
+Где *github-token* - это ваш токен в гитхаб (чтоб не вводить логин пароль).
 а "github.com/examples-code/django-hosting-netangels.git" - это ваш репозиторий
 
 *Готово.*
