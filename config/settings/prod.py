@@ -24,3 +24,12 @@ DATABASES = {
         "PORT": str(os.environ.get("DBPORT", "5432")),
     }
 }
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.1/howto/static-files/
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(str(os.environ["WWW_DIR"]), 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(str(os.environ["WWW_DIR"]), 'media')

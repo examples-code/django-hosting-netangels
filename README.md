@@ -84,13 +84,18 @@ git push -u origin main
 
 Выбираем в левом меню сайт, вкладка "Файлы" там выбираем "Терминал", в открывшемся терминале вводим: 
 
+Создаем каталоги для статики и медиа
+```
+cd www && mkdir static && mkdir media && cd ..
+```
+
+Удалим app с содержимым и создадим снова (чтоб был пустой):
 ```
 rm -r app
 mkdir app
 cd app
 git clone https://<github-token>@github.com/examples-code/django-hosting-netangels.git . -b main
 ```
-
 Где <github-token> - это ваш токен в гитхаб (чтоб не вводить логин пароль).
 а "github.com/examples-code/django-hosting-netangels.git" - это ваш репозиторий
 
@@ -113,3 +118,11 @@ python manage.py runserver
 ```
 python manage.py createsuperuser
 ```
+
+Если были выявлены ошибки, исправляем их в коде локально, делаем коммит, пуш в ветку на гитхаб, затем в терминале на сервере в каталоге app выполняем команду:
+
+```
+git pull https://<github-token>@github.com/examples-code/django-hosting-netangels.git main
+```
+Где <github-token> - это ваш токен в гитхаб (чтоб не вводить логин пароль).
+а "github.com/examples-code/django-hosting-netangels.git" - это ваш репозиторий
