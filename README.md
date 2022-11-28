@@ -78,7 +78,7 @@ git push -u origin main
 
 ### Создаем аккаунт на сайте и настраиваем
 
-* Инструкция по создания аккаунта см. тут: https://devnote.ural-site.ru/deploj-na-xosting
+* Инструкция по созданию аккаунта см. тут: https://devnote.ural-site.ru/deploj-na-xosting
 
 ### Загрузка проекта
 
